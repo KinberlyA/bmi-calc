@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="bmicalc.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="grid grid-2-cols cover-page viewport">
+        <div class="align cover-page-left">
+          <h1 class="main-heading">BMI CALCULATOR</h1>
+          <p>Learn your BMI to acess your fitness goals</p>
+          <button class="start-today-button cover-page-button">
+            Start Today, for free
+          </button>
+        </div>
+        <div></div>
+      </section>
+
+      <section class="grid grid-2-cols gender-page viewport hidden">
+        <div class="align cover-page-left">
+          <div class="">
+            <h1 class="main-heading gender-heading">What is your gender?</h1>
+            <p class="gender-paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+              tempora vero dolore architecto, ab corrupti sapiente recusandae
+              est assumenda animi dignissimos!
+            </p>
+          </div>
+          <div class="grid grid-2-cols gender-buttons">
+            <div>
+              <button class="start-today-button submit-male">Male</button>
+            </div>
+            <div>
+              <button class="start-today-button submit-female">Female</button>
+            </div>
+          </div>
+        </div>
+        <div><img src="manandwoman.jpeg" alt="" srcset="" /></div>
+      </section>
+      <section class="grid grid-2-cols height-page viewport hidden">
+        <div class="align cover-page-left">
+          <h1 class="main-heading">Enter your Height</h1>
+          <p class="gender-paragraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+            tempora vero dolore architecto, ab corrupti sapiente recusandae est
+            assumenda animi dignissimos!
+          </p>
+          <label for="height">Height (in inches)</label>
+          <input class="height-input" type="number" name="" id="height" />
+          <button class="start-today-button height-button">Submit</button>
+        </div>
+        <div>
+          <img
+            class="height-img height-woman hidden"
+            src="femalegraph.jpeg"
+            =""
+            srcset=""
+          />
+          <img
+            class="height-img height-man hidden"
+            src="malegraph.jpeg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </section>
+      <section class="grid grid-2-cols weight-page viewport hidden">
+        <div class="align cover-page-left">
+          <h1 class="main-heading">Enter your Weight</h1>
+          <p class="gender-paragraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+            tempora vero dolore architecto, ab corrupti sapiente recusandae est
+            assumenda animi dignissimos!
+          </p>
+          <label for="weight">Weight (in pounds)</label>
+          <input class="weight-input" type="number" name="" id="weight" />
+          <button class="start-today-button weight-button">Submit</button>
+        </div>
+        <div><img src="manandwoman2.jpeg" alt="" srcset=""></div>
+      </section>
+      <section class="grid grid-2-cols BMI-page viewport hidden">
+        <div class="align cover-page-left">
+          <h1 class="main-heading BMI-heading">Your BMI is <span class="BMI-num">30</span></h1>
+          <span class="start-today-button weight-type"> </span>
+          <p class="analysis"> 
+          </p>
+          <p class="ideal-weight-paragraph">
+            Your <b>ideal</b> weight is <b><span class="ideal-weight-num"> </span> pounds</b>, assuming you stay the same height, and <b>your goal BMI is <span class="idealBMInum"> </span></b>
+          </p>
+          <div class="ideal-weight-charts">
+            <img class="ideal-weight-charts-img" src="seventythirthypiechart.png" alt="" srcset="">
+          </div>
+        </div>
+        <div class="actual-weight-box reset-button">
+          <img class='actual-weight-img' src="" alt="" srcset="">
+        </div>
+      </section>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="bmicalc.js"></script>
+  </body>
+</html>

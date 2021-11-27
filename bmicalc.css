@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+.radio input[type="radio"] {
+  opacity: 0;
+}
+
+.grid {
+  display: grid;
+}
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+.left {
+  grid-column: 2/-1;
+}
+.cover-page {
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(157, 155, 155, 0.4),
+      rgba(172, 172, 172, 0.4)
+    ),
+    url("fakurian-desig-PGdW_bHDbpI-unsplash.jpg");
+  background-position: right 100% top 45%;
+}
+
+.main-heading {
+  font-size: 6rem;
+  color: #333333;
+}
+.start-today-button {
+  letter-spacing: 0.08rem;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0px 15px 37px -15px #424242;
+  width: max-content;
+  align-self: right;
+  /* box-shadow: inset 2px 5px 16px 0px #337f8f,
+    3px 16px 20px 6px rgb(148, 148, 148); */
+}
+.cover-page-button {
+  color: #f2e6f2;
+  background-color: #993399;
+}
+.cover-page-left {
+  padding: 0 8rem;
+}
+.viewport {
+  height: 100vh;
+}
+/* GENDER SECTION */
+.gender-buttons {
+  position: relative;
+}
+.submit-male::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 4rem;
+  top: 50%;
+  left: 47%;
+  background-color: gray;
+  transform: rotate(90deg);
+}
+.gender-heading {
+  line-height: 1;
+  font-size: 8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.gender-paragraph {
+  margin: 2rem 0;
+  color: #333333;
+}
+input {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.6rem;
+  border: 1px solid black;
+}
+
+.height-button,
+.weight-button,
+.weight-type {
+  background-color: white;
+  width: 20%;
+  box-shadow: 2px 2px 8px 0px rgba(106, 106, 105, 0.648);
+}
+img {
+  height: 100vh;
+  max-width: 100%;
+}
+.submit-female,
+.submit-male {
+  width: 100%;
+  border-right: none;
+  border-left: none;
+}
+.actual-weight-img {
+  position: fixed;
+  right: 19%;
+}
+
+.BMI-heading {
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.weight-type {
+  font-size: 1.8rem;
+  margin-top: 0;
+  background-color: #f2e6f2;
+  padding: 0.5rem 2rem;
+  width: fit-content;
+}
+.analysis,
+.ideal-weight-paragraph {
+  font-size: 1.9rem;
+}
+.ideal-weight-paragraph {
+  margin-top: 1rem;
+}
+.ideal-weight-charts-img {
+  height: 30rem;
+  width: auto;
+  margin-top: 7%;
+}
+.ideal-weight-charts {
+  position: relative;
+}
+.ideal-weight-charts::after {
+  position: absolute;
+  content: "of Americans are obese or overweight";
+  height: auto;
+  width: fit-content;
+  z-index: 1;
+  color: #008000;
+  /* rgba(102, 179, 102, 0.832) */
+  top: 70%;
+  left: 20%;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+.reset-button {
+  position: relative;
+}
+.reset-button::after {
+  position: fixed;
+  content: "Reset";
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.5rem;
+  top: 5%;
+  right: 5%;
+  height: fit-content;
+  width: fit-content;
+  z-index: 1;
+  color: #d1e8d1;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: green;
+  box-shadow: 2px 2px 8px 0px rgba(106, 106, 105, 0.648);
+}
